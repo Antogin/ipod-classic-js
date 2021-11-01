@@ -19,13 +19,12 @@ const SettingsView = () => {
   useMenuHideWindow(ViewOptions.settings.id);
   const {
     isAuthorized,
-    isAppleAuthorized,
     isSpotifyAuthorized,
     service,
     deviceTheme,
     setDeviceTheme,
   } = useSettings();
-  const { signIn: signInWithApple, signOut: signOutApple } = useMusicKit();
+  const { signIn: signInWithApple } = useMusicKit();
   const { signOut: signOutSpotify, signIn: signInWithSpotify } =
     useSpotifySDK();
 
@@ -122,13 +121,11 @@ const SettingsView = () => {
     [
       deviceTheme,
       setDeviceTheme,
-      isAppleAuthorized,
       isAuthorized,
       isSpotifyAuthorized,
       service,
       signInWithApple,
       signInWithSpotify,
-      signOutApple,
       signOutSpotify,
     ]
   );

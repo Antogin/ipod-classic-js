@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-import { useInterval } from 'hooks';
 import styled, { css } from 'styled-components';
 import { Unit } from 'utils/constants';
 
