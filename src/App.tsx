@@ -3,7 +3,6 @@ import * as React from 'react';
 import { ScrollWheel } from 'components';
 import {
   AudioPlayerProvider,
-  MusicKitProvider,
   SettingsProvider,
   SpotifySDKProvider,
   useSettings,
@@ -148,11 +147,9 @@ const Ipod = () => {
       <ScreenContainer>
         <WindowProvider>
           <SpotifySDKProvider>
-            <MusicKitProvider>
-              <AudioPlayerProvider>
-                <WindowManager />
-              </AudioPlayerProvider>
-            </MusicKitProvider>
+            <AudioPlayerProvider>
+              <WindowManager />
+            </AudioPlayerProvider>
           </SpotifySDKProvider>
         </WindowProvider>
       </ScreenContainer>
