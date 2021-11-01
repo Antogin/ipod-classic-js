@@ -110,11 +110,6 @@ const SettingsView = () => {
         id: ViewOptions.signOutPopup.id,
         label: 'Sign out',
         listOptions: [
-          ...getConditionalOption(isAppleAuthorized, {
-            type: 'Action',
-            label: 'Apple Music',
-            onSelect: signOutApple,
-          }),
           ...getConditionalOption(isSpotifyAuthorized, {
             type: 'Action',
             label: 'Spotify',

@@ -74,11 +74,6 @@ const HomeView = () => {
         listOptions: [
           {
             type: 'Action',
-            label: 'Apple Music',
-            onSelect: signInWithApple,
-          },
-          {
-            type: 'Action',
             label: 'Spotify',
             onSelect: signInWithSpotify,
           },
